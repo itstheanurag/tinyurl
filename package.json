@@ -1,0 +1,31 @@
+{
+  "name": "tinyurl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itstheanurag/tinyurl.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itstheanurag/tinyurl/issues"
+  },
+  "homepage": "https://github.com/itstheanurag/tinyurl#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nanoid": "^4.0.0",
+    "sequelize": "^6.27.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "husky": "^8.0.2"
+  }
+}
