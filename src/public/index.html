@@ -5,8 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tiny Url</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Welcome to Tiny Url</h2>
+    
+        <h1>Welcome to Tiny Url</h1>
+
+        <form id = "form">
+            <input id = "input" name = 'longurl' placeholder = "Paste your long Url in here...">
+            <button id = "submit" type="submit">Submit</button>
+        </form>
+    
+        <article id = "short-url-div">
+            <h2>Your Link is ready</h2>
+            <a id = "shorturl" href=""></a>
+        </article>
+    
+        <article id="errors">
+            <h2>Error Intercepted</h2>
+            <p id="error">You have not provided any Url</p>
+        </article>
+        
+    <script src="index.js"></script>
 </body>
 </html>

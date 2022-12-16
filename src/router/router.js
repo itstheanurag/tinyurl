@@ -1,11 +1,12 @@
 const express = require('express');
 const router = express.Router();
-const path = require('path');
 
-router.get('/', (req, res) => {
-    const file = path.join(__dirname, '../public/index.html')
-    console.log(file);
-    res.sendFile(file);
+router.post('/longurl', (request, response) => {
+    // const {url} = request.body;
+    // const urlid = 'someurl'
+    // return response.json({status: "failure", error: "Url not Valid"})
+    // return response.status(200).json({shorturl: urlid, status: 'success'})
+    
 })
 
 module.exports = router

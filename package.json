@@ -23,7 +23,8 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "nanoid": "^4.0.0",
-    "sequelize": "^6.27.0"
+    "sequelize": "^6.27.0",
+    "valid-url": "^1.0.9"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.3.0",
