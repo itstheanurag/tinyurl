@@ -1,4 +1,4 @@
-const { createurlservice } = require('../services/url.service')
+const { createurlservice, redirectService } = require('../services/url.service')
 
 const createUrl = async (request, response) => {
     try{
@@ -6,9 +6,17 @@ const createUrl = async (request, response) => {
     }
     catch(err) {
         console.log(err)
-        return response.status(500).json({status:"failure", error: err})
+        return response.status(500).json({ status:"failure", error: err })
+    }
+}
+
+const redirect = async (request, response) => {
+    try {
+        return redirectService(request, response);
+    }catch(err){
+        return response.status(500).json({ status:"failure", error: err })
     }
 }
 
 
-module.exports =  { createUrl }
+module.exports =  { createUrl, redirect }
