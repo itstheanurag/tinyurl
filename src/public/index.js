@@ -14,7 +14,6 @@ const checkUrl = (data) => {
 
 const handleSubmit = async () => {
     let url = document.querySelector("#input").value;
-    console.log(url)
 
     const urlLengthExists = checkUrl(url);
 
