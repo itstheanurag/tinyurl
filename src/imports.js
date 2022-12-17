@@ -1,4 +1,4 @@
-const {Port} = require('./config');
+const { Port } = require('./config');
 const Router = require('./router/router')
 
 

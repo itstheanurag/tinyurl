@@ -1,12 +1,8 @@
 const express = require('express');
+const { createUrl } = require('../controller/url.controller.js');
 const router = express.Router();
 
-router.post('/longurl', (request, response) => {
-    // const {url} = request.body;
-    // const urlid = 'someurl'
-    // return response.json({status: "failure", error: "Url not Valid"})
-    // return response.status(200).json({shorturl: urlid, status: 'success'})
-    
-})
+
+router.post('/longurl', createUrl)
 
 module.exports = router

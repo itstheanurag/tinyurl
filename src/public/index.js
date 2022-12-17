@@ -32,26 +32,27 @@ const handleSubmit = async () => {
             method: "POST",
             body: JSON.stringify({ url }),
         }).then((response) => response.json());
-
+        
+        console.log(response)
         if (response.status === "failure") {
 
             if (shortUrl.style.display === "flex") {
                 shortUrl.style.display = "none";
             }
-            else {
+        
                 Errors.style.display = "flex";
                 errorPara.innerHTML = `${response.error}`
-            }
+            
         } 
         else if (response.status === "success") {
             if(Errors.style.display === "flex"){
                 Errors.style.display = "none";
             }
-            else{
-                shortUrl.style.display = "flex";
-                shorturldata.href = `${response.shorturl}`
-                shorturldata.innerHTML = `${response.shorturl}`
-            }
+        
+            shortUrl.style.display = "flex";
+            shorturldata.href = `${response.data.shorturl}`
+            shorturldata.innerHTML = `${response.data.shorturl}`
+    
         }
     }
 }
